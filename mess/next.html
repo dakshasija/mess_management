@@ -1,0 +1,22 @@
+<?php
+
+include_once('./connect.php');
+
+$regno=$_POST['regno'];
+$name=$_POST['name'];
+$block=$_POST['block'];
+$mname=$_POST['mess'];
+$mid=$_POST['mid'];
+$sql="INSERT INTO record (regno,name, block, mname, mid) VALUES ('$regno', '$name', '$block', '$mname', '$mid')";
+if(mysqli_query($con,$sql))
+
+{
+	echo'<h2>Welcome</h2>';
+
+
+}
+
+
+
+
+?>

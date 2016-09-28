@@ -1,0 +1,52 @@
+<!-- //reg no name block mess name mess id -->
+
+
+
+<?php
+
+$regno=$_POST['regno'];
+$name=$_POST['name'];
+$block=$_POST['block'];
+$mname=$_POST['mname'];
+if($mname=='Special')
+$mid=1;
+
+if(mname=='North Indian Veg')
+$mid=2;
+
+if(mname=='North Indian Non-Veg')
+$mid=3;
+
+if(mname=='South Indian')
+$mid=4;
+
+echo $regno.' '.$name.' '.$block.' '.$mname.' '.$mid';
+
+
+
+
+
+
+
+?>
+
+
+
+
+
+<form action="" method="POST">
+
+Reg No:<input type="text" name="regno" required>
+Name:<input type="text" name="name" required>
+Block:<input type="text" name="block" required>
+<div>
+Mess Name:
+Special<input type="radio" value="mname" name="mess" required>
+North Indian Veg<input type="radio" value="mname" name="mess" required>
+North Indian Non-Veg<input type="radio" value="mname" name="mess" required>
+South Indian<input type="radio" value="mname" name="mess"required>
+
+</div>
+Mess ID:<input type="number" value="mid" disabled>
+<input type="submit" value="Submit">
+</form>

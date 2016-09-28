@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="asd.css">
+
+</head>
+<body>
+<form action="next.php" method="POST">
+
+<div class="container">
+
+    <form id="signup">
+
+        <div class="header">
+        
+            <h3>Mess Registration</h3>
+            
+            <p>Please Register for the Mess</p>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        
+            <input type="text" name="regno" placeholder="Reg No" autofocus />
+			<input type="text" name="name"placeholder="Name"/>
+			<input type="text" name="block"placeholder="Block"/>
+			<input type="number" value="<?php echo $mid; ?>">
+
+        
+            
+            
+            <div class="checkboxy">
+			
+				<h4>Select Mess</h4>
+                <input name="cecky" id="checky" value="S" type="radio" /><label class="terms">Special</label>
+				<input name="cecky" id="checky" value="NINV" type="radio" /><label class="terms">NVeg</label>
+				<input name="cecky" id="checky" value="NIV" type="radio" /><label class="terms">Veg</label>
+				<input name="cecky" id="checky" value="SI" type="radio" /><label class="terms">South</label>
+            </div>
+            
+            <a id="submit" href="#">Submit</a>
+			<a id="submit" href="final.php">Search</a>
+			
+
+        
+        </div>
+
+    </form>
+
+</div>
+​</body>
+</html>
